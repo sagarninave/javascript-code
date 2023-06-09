@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> switch </title>
+	<script type="text/javascript">
+		function check(){
+			var car=document.getElementById("name").value;
+			
+			switch(car){
+				case "ferrari":
+					document.write("you choose ferrari");
+					break;
+				case "porshce":
+					document.write("you choose porsche");
+					break;
+				default:
+					document.write("First choose right car");
+					break;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<p id="result"></p>
+		<input type="text" name="name" id="name">
+		<input type="button" name="submit" value="submit" onclick="return check();">
+	</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> input </title>
+	<script type="text/javascript">
+		function change() {
+			var name = document.getElementById('name');
+			var para = document.getElementById('para');
+
+			para.innerHTML = "welcome" + " " + name.value;
+		}
+		
+	</script>
+</head>
+<body>
+	<p id="para"></p>
+	Input Name : <input type="text" id="name"> 
+	<input type="button" id="submit" value="click me" onclick="change();">
+</body>
+</html>

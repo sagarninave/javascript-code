@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<body>
+	<script>
+		var myCars = [
+					{ model: "BMW", year: 2016 },
+					{ model: "Honda", year: 2011 },
+					{ model: "Toyota", year: 2015}
+		];
+		for ( var k = 0; k < myCars.length; k++ ) {
+			
+			var myCar = "";
+			// cp is car property
+			for ( cp in myCars[k] ) {
+
+				myCar = myCar + myCars[k][cp];
+
+			}
+			document.write(myCar + "<br>");
+	</script>
+</body>
+</html>

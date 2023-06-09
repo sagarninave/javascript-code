@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> change image</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var image_tracker = 'f';
+		function change(){
+			var data = document.getElementById('image');
+			data.src = './image/2.jpg';
+			// window.alert(data.src);
+			if(image_tracker=='f'){
+				data.src = './image/2.jpg';
+				image_tracker = 't';
+			} 
+			else{
+				data.src = './image/1.jpg';
+				image_tracker = 'f';
+			}
+		}
+		// setTimeout("change()", 2000); // if we use this finction to change image then it will change for a once 
+		var timer = setInterval("change()", 2000);   /* if we use this function to change image then it will change for every time interval */
+	</script>
+
+<img src="./image/1.jpg" id="image" onclick="clearInterval(timer);"> 
+</body>
+</html>

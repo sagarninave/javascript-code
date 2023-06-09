@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>onSubmit Test</title>
+<script LANGUAGE="JavaScript">
+	function mailMe(form){
+	    Subject=document.testform.inputbox1.value;
+	    CC= document.testform.inputbox2.value;
+	    BCC= document.testform.inputbox3.value;
+	    location = "mailto:sagarninave@gmail.com?subject="+Subject+"&cc="+CC+"&Bcc="+BCC;
+	    return true;
+	}
+</script>
+</head>
+<body>
+	<form NAME="testform" onSubmit="return mailMe(this.form)" >
+
+		Subject of message:<input TYPE="text" NAME="inputbox1" VALUE="This is such a great form!" SIZE=50> </br>
+		Send cc to: <input TYPE="text" NAME="inputbox2" VALUE="" SIZE=50> </br>
+		Send blind Bcc to: <input TYPE="text" NAME="inputbox3" VALUE="" SIZE=50> </br>
+		<input TYPE="submit"></br>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Radio</title>
+	<script type="text/javascript">
+		function check(){
+			var tv = document.getElementById('tv').checked;
+			var freeze = document.getElementById('freeze').checked;
+			var ac = document.getElementById('ac').checked;
+			
+			if ((tv==false) && (freeze==false) && (ac==false)){
+				alert("please select");
+				return false;
+			}
+			else{
+				return true;
+			}
+ 		}
+	</script>
+</head>
+<body>
+	<form action="0 thankyou.html" method="GET" onsubmit="return check();">
+		<input type="checkbox" name="tv" id="tv" value="tv"> TV </br>
+		<input type="checkbox" name="freeze" id="freeze" value="freeze"> Freeze </br>
+		<input type="checkbox" name="ac" id="ac" value="ac"> AC </br>
+		<input type="submit" name="submit" value="Submit">
+	</form>
+</body>
+</html>

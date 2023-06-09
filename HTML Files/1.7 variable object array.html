@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html><html lang="en"><body><script>
+
+    var myString = 'string'
+    var myNumber = 10;
+    var myBoolean = false; // could be true or false, but that is it
+    var myNull = null;
+    var myUndefined = undefined;
+
+    document.write(myString, myNumber, myBoolean, myNull, myUndefined, "</br> </br>");
+
+    /* Consider that a complex object like array or object can be made up of multiple primitive values, and thus becomes a complex set of multiple values. */
+
+    var myObject = {
+        myString: 'string',
+        myNumber: 10,
+        myBoolean: false,
+        myNull: null,
+        myUndefined: undefined
+    };
+
+    document.write(myObject, "</br>");
+    document.write(myObject.myString, "</br>");
+    document.write(myObject.myNumber, "</br>");
+    document.write(myObject.myBoolean, "</br>");
+    document.write(myObject.myNull, "</br>");
+    document.write(myObject.myUndefined, "</br></br>");
+
+    var myArray = ['string', 10, false, null, undefined];
+
+    document.write(myArray, "</br>");
+
+</script></body></html>

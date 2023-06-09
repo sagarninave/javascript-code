@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ternary opeartor </title>
+	<script type="text/javascript">
+		function check(){
+			var number = document.getElementById('number').value;
+			var result = document.getElementById('result');
+		
+			var result_result = number % 2 == 0 ? "Even number" : "Odd Number";
+			result.innerHTML = result_result
+
+		}
+		
+	</script>
+</head>
+<body>
+	<form>
+		
+		<input type="text" name="" id="number">
+		<input type="button" name="" value="check number" onclick="return check();">
+		<p id="result"></p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> addition getElementByID method </title>
+	<script type="text/javascript">
+		function addition(){
+			var first = parseFloat(document.getElementById("first").value);  		//parseInt is used to parse input float value
+			var second = parseFloat(document.getElementById("second").value);
+
+			if(isNaN(first)){
+				alert("please enter valid first number");
+				return;
+			}
+			if(isNaN(second)){
+				alert("please enter valid second number");
+				return;
+			}
+
+			document.getElementById("result").value = first + second;
+			document.getElementById("result1").innerHTML = first + second;
+		}
+	</script>
+</head>
+<body>
+	first number <input type="text" id="first"> </br>
+	second number <input type="text" id="second"> </br>
+	
+	result <input type="text" id="result"> </br>
+	<p id="result1"> Result is</p>
+
+	<input type="submit" id="submit" value="submit" onclick="return addition();">
+</body>
+</html>

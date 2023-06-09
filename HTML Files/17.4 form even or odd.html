@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> even or odd </title>
+	<script type="text/javascript">
+		function check(){
+			var number = document.getElementById('box').value;
+			if(number % 2 == 0){
+				document.getElementById("para").innerHTML = number + " is even number";
+				//alert(number + " is even number");
+			}else{
+				document.getElementById("para").innerHTML = number + " is Odd number";
+				//alert(number + " is Odd number");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="box">
+	<input type="submit" name="" value="submit" onclick="return check();">
+	<p id="para"></p>
+</body>
+</html>

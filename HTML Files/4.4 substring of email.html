@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> substring </title>
+	<script type="text/javascript">
+		function devide(){
+			var emailid = document.getElementById('email').value;
+			var emailpart = emailid.substring(0, emailid.indexOf("@"));
+			var domainpart = emailid.substring(emailid.indexOf("@")+1);
+
+			document.getElementById("emailpart").value = emailpart;
+			document.getElementById("domainpart").value = domainpart;
+		}
+	</script>
+</head>
+<body>
+	emailID <input type="email" name="" id="email"> <br>
+	email <input type="text" name="" id="emailpart"> <br>
+	domain <input type="text" name="" id="domainpart"> <br>
+	<input type="submit" name="" value="Submit" onclick="return devide();"> 
+
+</body>
+</html>

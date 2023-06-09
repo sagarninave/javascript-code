@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title> strings functions in javascript </title>
+	<script type="text/javascript">
+		function trimfunc(){
+			var string1 = document.getElementById("string1").value;
+			var string2 = document.getElementById("string2").value;
+			var result = string1.trim() + " " + string2.trim();
+			alert(result);	
+		}
+
+		function uppercase(){
+			var string = document.getElementById('str').value;
+			var result = string.toUpperCase();
+			alert(result);
+		}
+
+		/*function lowercase(){
+			var string = document.getElementById('str').value;
+			var result = string.toLowerCase();
+			alert(result);
+		}*/
+		
+		function concatstring(){
+			var string1 = document.getElementById("concat1").value;
+			var string2 = document.getElementById("concat2").value;
+			var result = string1.concat(" ", string2);
+			alert(result);
+
+		}
+
+		function replace(){
+			var myval = "Hello World";
+			var string = document.getElementById("replacestring").value;
+			var result = myval.replace("world", "string");
+			alert(result);
+		}
+	</script>
+</head>
+<body>
+
+
+	<input type="text" id="string1" name=""> 
+	<input type="text" id="string2" name=""> 
+	<input type="submit" value="trim()" onclick="return trimfunc();">     //  it trim the extra botj end spaces from the strings </br></br>
+
+	<input type="text" id="str" name=""> 
+	<input type="submit" value="toUpperCase" onclick="return uppercase();"> 
+	<!--<input type="submit" value="toLowerCase" onclick="return lowercase();">-->   // convert lower case letters to upper case  and viseversa  </br></br>
+
+	<input type="text" id="concat1" name=""> 
+	<input type="text" id="concat2" name=""> 
+	<input type="submit" value="concatination" onclick="return concatstring();">  // it concate two string using concate function</br></br>
+
+	<input type="text" id="replacestring" name=""> 
+	<input type="submit" value="Replace String" onclick="return replace();">  // it replace a inputed string with ( Hello [world] )</br></br>
+
+</body>
+</html>

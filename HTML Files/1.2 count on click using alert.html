@@ -1,0 +1,19 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title> click count </title>
+	<script type="text/javascript">
+		var count =0;
+		function my(){
+			return document.write("hello");
+		}
+
+		document.write(my());
+	</script>
+</head>
+<body>
+	<input type="submit" name="submit" value="submit" onclick="alert(++count);">
+	<input type="submit" name="submit" value="my" onclick="my();">
+
+</body>
+</html>

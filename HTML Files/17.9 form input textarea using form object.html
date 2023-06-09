@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<TITLE>Text Area Test</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function seeTextArea (form) {
+    alert (form.myarea.value);
+
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+	<FORM NAME="myform">
+		<INPUT TYPE="button" NAME="button3" Value="Test" onClick="seeTextArea(this.form)">
+		<TEXTAREA NAME="myarea" COLS="40" ROWS="5"></TEXTAREA>
+	</FORM>
+</BODY>
+</HTML>
+

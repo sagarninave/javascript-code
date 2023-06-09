@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> slect </title>
+	<script type="text/javascript">
+	function select(){
+		var x = document.getElementById("selectlist");
+		alert("we have selected " + x.value);
+		//alert("we have selected " + selectlist.value);
+	} 
+	</script>
+</head>
+<body>
+	<select id="selectlist" onchange="select()">
+		<option value="male"> male </option>
+		<option value="female"> female </option>
+	</select>
+</body>
+</html>

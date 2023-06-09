@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> addition getElementByID method 2 </title>
+	<script type="text/javascript">
+		function addition(){
+			var first = document.getElementById("first").value;  		//parseInt is used to parse input integer value
+
+			if(first == ""){
+				alert("require first number");
+				return false;
+			}
+
+			first = parseFloat(first);
+
+			if(isNaN(first)){
+				alert("please enter valid first number");
+				return;
+			}
+
+			var second = document.getElementById("second").value;
+
+			if(second == ""){
+				alert("require second number");
+				return;
+			}
+
+			second = parseFloat(second);
+			if(isNaN(second)){
+				alert("please enter valid second number");
+				return;
+			}
+
+			document.getElementById("result").value = first + second;
+			document.getElementById("result1").innerHTML = first + second;
+		}
+	</script>
+</head>
+<body>
+	first number <input type="text" id="first"> </br>
+	second number <input type="text" id="second"> </br>
+	
+	result <input type="text" id="result"> </br>
+	<p id="result1"> Result is</p>
+
+	<input type="submit" id="submit" value="submit" onclick="return addition();">
+</body>
+</html>

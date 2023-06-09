@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html><html lang="en"><body><script>
+
+    var cody = new Object();
+    cody.living = true;
+    cody.age = 33;
+    cody.gender = 'male';
+    cody.getGender = function () { 
+    	return cody.gender;
+    	};
+    cody.getAge = function () { 
+    	return cody.age;
+    	};
+
+    document.write(cody.getGender(),"<br>");
+    document.write(cody.getAge());
+    document.write(cody);
+    console.log(cody.getGender()); // logs 'male'
+    console.log(cody.getAge());
+
+</script></body></html>

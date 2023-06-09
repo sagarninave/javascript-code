@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> radio2 </title>
+	<script type="text/javascript">
+	function change(){
+		var x = document.getElementById("radio-div");
+		alert("we have selected " + x.value);
+		//alert("we have selected " + selectlist.value);
+	} 
+	</script>
+</head>
+<body>
+		
+	<div id="radio-div" onchange="change()">
+		<input type="radio" name="radio-btn" value="first" id="first"> first </br>
+		<input type="radio" name="radio-btn" value="second"> second </br>
+		<input type="radio" name="radio-btn" value="third"> third </br>
+		<input type="radio" name="radio-btn" value="fourth"> fourth </br>
+	</div>
+</body>
+</html>

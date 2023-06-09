@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> click count </title>
+	<script type="text/javascript">
+		var increment = (function ()
+		{var count =0;	
+			return ++count;
+		}
+	    )();
+	</script>
+</head>
+<body>
+	<input type="submit" name="submit" value="submit" onclick="alert(increment)">
+</body>
+</html>

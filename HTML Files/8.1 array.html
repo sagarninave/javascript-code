@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array With For Loop</title>
+</head>
+<script type="text/javascript">
+	function myArray1func(){
+		
+		var mobile = new Array('apple', 'samsung', 'vivo', 'oppo', 'lava', 'nokia','microsoft');
+		window.document.write("function 1 </br>");
+		window.document.write(mobile[0], "</br>");
+		window.document.write(mobile[1], "</br>");
+		window.document.write(mobile[2], "</br>");
+		window.document.write(mobile[3], "</br>");
+		window.document.write(mobile[4], "</br>");
+		window.document.write(mobile[5], "</br>");
+		window.document.write(mobile, " </br>");
+	}
+
+	function myArray2func(){
+
+		var mobile = new Array(5); // length specified
+
+		mobile[0] = "apple";
+		mobile[1] = "samsung";
+		mobile[2] = "oppo";
+		mobile[3] = "vivo";
+		mobile[4] = "nokia";
+	
+		window.document.write("</br>function 2 </br>");
+		window.document.write(mobile, " </br>");
+	}
+
+	function myArray3func(){
+
+		var mobile = new Array(); //without length specified
+
+		mobile[0] = "apple";
+		mobile[1] = "samsung";
+		mobile[2] = "oppo";
+		mobile[3] = "vivo";
+		mobile[4] = "nokia";
+	
+		window.document.write("</br>function 3 </br>");
+		window.document.write("sorted array         : ",mobile.sort(), " </br>");
+		window.document.write("Length of arrey      : ",mobile.length, " </br>");
+	}
+myArray1func();
+myArray2func();
+myArray3func();
+
+</script>
+<body>
+	
+</body>
+</html>

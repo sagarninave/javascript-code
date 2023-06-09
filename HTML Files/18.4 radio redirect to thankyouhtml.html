@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Radio</title>
+	<script type="text/javascript">
+		function check(){
+			var male = document.getElementById('male').checked;
+			var female = document.getElementById('female').checked;
+			
+			if ((male==false) && (female==false)){
+				alert("please select");
+				return false;
+			}
+			else{
+				return true;
+			}
+ 		}
+	</script>
+</head>
+<body>
+	<form action="0 thankyou.html" method="GET" onsubmit="return check();">
+		<input type="radio" name="gender" id="male" value="male"> Male
+		<input type="radio" name="gender" id="female" value="female"> Female
+		<input type="submit" name="submit" value="Submit">
+	</form>
+</body>
+</html>

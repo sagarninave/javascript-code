@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>uppercase</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function change1(){
+			var data = document.getElementById('para1');
+			data.innerHTML = "after clicked data 1";
+		}
+
+		function change2(){
+			document.getElementById('para2').innerHTML = "after clicked data 2";
+		}
+		
+	</script>
+
+<p id="para1" onclick="change1();">Click Me 1</p>
+<p id="para2" onclick="change2();">Click Me 2</p>
+
+</body>
+</html>

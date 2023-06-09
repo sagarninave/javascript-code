@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> form </title>
+</head>
+<body>
+<script type="text/javascript">
+		
+		function write_name(){
+			var name_id = document.getElementById('name').value;
+			document.write(name_id);
+			console.log(name_id);
+			// document.getElementById('content').innerHTML = name_id;
+		}
+
+
+
+</script>
+	<h1>welcome</h1>
+	
+	<form>
+		<input type="text" name="name" id="name">
+		<input type="submit" name="submit" value="submit" onclick="write_name();">
+		
+	</form>
+	<!-- <p style="margin-top:20%;" id="content"></p> -->
+</body>
+</html>

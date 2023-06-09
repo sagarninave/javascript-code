@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> replace </title>
+	<script type="text/javascript">
+		function case_sensitive(){
+			var string = "i am at Home. my home in nagpur and in my home lots of electronic devices"
+			var result = string.replace(/home/g, "office");
+			alert(result);
+		}
+		function without_case_sensitive(){
+			var string = "i am at Home. my home in nagpur and in my home lots of electronic devices"
+			var result = string.replace(/home/gi, "office");
+			alert(result);
+		}
+	</script>
+</head>
+<body>
+	<input type="submit" name="" value="replace with case_sensitive" onclick="case_sensitive();">  </br>
+	<input type="submit" name="" value="without case_sensitive" onclick="without_case_sensitive();"> 
+</body>
+</html>
