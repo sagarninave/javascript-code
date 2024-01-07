@@ -1,0 +1,16 @@
+feature 
+	V8 JavaScript Engine - compile javascript code to machine code to faster execution
+	asyncronous and event driven
+	Non-blocking I/O achive throungh Event Loop
+	Single Threaded but Highly Scalable 
+	Node.js library uses JavaScript
+	Active and vibrant community
+	No Buffering - depend on fs.readFile and fs.createReadStream
+
+how works
+	works asynchronously by using the event loop and callback functions
+	Event Loop is a functionality which handles and processes all your external events and just converts them to a callback function.
+	It invokes all the event handlers at a proper time
+	
+what is process
+	
